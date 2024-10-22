@@ -1,0 +1,10 @@
+id: rule_not_working_swift
+valid:
+  - |
+    try Blowfish(key: config, iv: "123")
+invalid:
+  - |
+     let password: Array<UInt8> = Array("s33krit".utf8)
+     let salt: Array<UInt8> = Array("nacllcan".utf8)
+     try Blowfish(key: "hello", iv: "123")
+     try Blowfish(key: password, iv: "123")

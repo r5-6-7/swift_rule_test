@@ -1,0 +1,17 @@
+{
+  "name": "ast-grep-essentials",
+  "version": "1.0.0",
+  "description": "ast-grep essential security rules",
+  "main": "index.js",
+  "scripts": {
+    "test-wip": "ast-grep test --skip-snapshot-tests -c ./sgconfig.yml",
+    "test-ci": "ast-grep test -c ./sgconfig.yml",
+    "test": "ast-grep test --interactive -c ./sgconfig.yml",
+    "test-update-all": "ast-grep test --update-all -c ./sgconfig.yml"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ast-grep/cli": "^0.26.0"
+  }
+}
